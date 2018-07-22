@@ -1,1 +1,1 @@
-# Footstep-SVM
+# Person recognition from footstep using SVM
