@@ -1,6 +1,4 @@
-"""
-Class for managing our data.
-"""
+# This code will import training and testing data
 import csv
 import numpy as np
 import random
@@ -9,7 +7,6 @@ import os.path
 import sys
 import operator
 import threading
-#from processor import process_image
 from keras.utils import to_categorical
 
 class threadsafe_iterator:
