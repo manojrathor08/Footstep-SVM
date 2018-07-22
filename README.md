@@ -1,1 +1,5 @@
-# Person recognition from footstep using SVM
+Person recognition from footstep using SVM
+/////////////////////////////////////////////////////////////////////////////////////////////
+
+
+First data is collected from different person by walking them on foot mat.
