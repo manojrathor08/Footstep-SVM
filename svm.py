@@ -54,9 +54,11 @@ def svc_param_selection(X, y, nfolds):
               % (mean, std * 2, params))
     return grid_search.best_params_
 
+# Function to grid search hyper parameter for SVM
 grid_search_best_params_ = svc_param_selection(X_train,y_train,5)
 C = grid_search_best_params_['C']
 gamma= grid_search_best_params_['gamma']
+# SVM is fit using best C and Gamma values
 clf = svm.SVC(kernel='rbf', C=C,gamma = gamma)
 scores = cross_val_score(clf, X_train, y_train, cv=5)
 print(scores)
